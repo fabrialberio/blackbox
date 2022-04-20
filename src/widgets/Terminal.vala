@@ -40,7 +40,7 @@ public class Terminal.Terminal : Vte.Terminal {
   // Properties
 
   public Scheme scheme  { get; set; }
-  public Pid    pid     { get; protected set; }
+  public Pid    pid     { get; protected set; default = -1; }
 
   // Fields
 
@@ -348,6 +348,41 @@ public class Terminal.Terminal : Vte.Terminal {
     }
 
     return false;
+  }
+
+  public bool get_can_close (out string command = null) {
+    if (this.pid < 0 || this.pty == null) {
+      return true;
+    }
+
+    var fd = this.pty.fd;
+    if (fd == -1) {
+      return true;
+    }
+
+    // Get terminal's foreground process
+    var fgpid = get_foreground_process (fd);
+    if (fgpid == -1) {
+      return false;
+    }
+
+    var filename = "/proc/%d/cmdline".printf (fgpid);
+    string? data = null;
+
+    try {
+      if (!FileUtils.get_contents (filename, out data, null)) {
+        // There is something running, we just failed to check what it is
+        return false;
+      }
+
+      command = Filename.to_utf8 (data, data.length, null, null);
+      warning ("Terminal running command %s", command);
+    }
+    catch (Error e) {
+      warning ("%s", e.message);
+    }
+
+    return true;
   }
 
   //  private void on_drag_data_received(

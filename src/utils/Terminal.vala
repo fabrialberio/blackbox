@@ -70,4 +70,50 @@ namespace Terminal {
 
     return arr;
   }
+
+  public int get_foreground_process (
+    int terminal_fd,
+    Cancellable? cancellable = null
+  ) {
+    if (!is_flatpak ()) {
+      return Posix.tcgetpgrp (terminal_fd);
+    }
+
+    KeyFile kf = new KeyFile ();
+    kf.load_from_file ("/.flatpak-info", KeyFileFlags.NONE);
+    string host_root = kf.get_string ("Instance", "app-path");
+
+    string[] argv = {
+      "flatpak-spawn",
+      "--host",
+      "%s/bin/terminal-toolbox".printf (host_root),
+      //  "/app/bin/toolbox/terminal-toolbox",
+      "tcgetpgrp",
+      terminal_fd.to_string ()
+    };
+
+    warning ("flatpak-spawn command: %s", string.joinv (" ", argv));
+
+    var launcher = new GLib.SubprocessLauncher(
+      SubprocessFlags.STDOUT_PIPE | SubprocessFlags.STDERR_PIPE
+    );
+
+    launcher.setenv("G_MESSAGES_DEBUG", "false", true);
+
+    var sp = launcher.spawnv(argv);
+
+    if (sp == null) {
+      return -1;
+    }
+
+    string? buf = null;
+    string? err_buf = null;
+    if (!sp.communicate_utf8(null, cancellable, out buf, out err_buf)) {
+      return -1;
+    }
+
+    warning ("PID from terminal-toolbox '%s' -- err %s", buf?.strip (), err_buf);
+
+    return -1;
+  }
 }

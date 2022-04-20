@@ -214,6 +214,18 @@ public class Terminal.Window : Adw.ApplicationWindow {
       return w.tab_view;
     });
 
+    this.tab_view.close_page.connect ((page) => {
+      var terminal = (page.get_child () as TerminalTab)?.terminal;
+      bool can_close = true;
+
+      if (terminal != null) {
+        can_close = terminal.get_can_close ();
+      }
+
+      this.tab_view.close_page_finish (page, can_close);
+      return true;
+    });
+
     // Close the window if all tabs were closed
     this.tab_view.notify["n-pages"].connect (() => {
       if (this.tab_view.n_pages < 1) {
