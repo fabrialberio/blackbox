@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.11.3 - 2022.07.21
+
+- Ctrl + click can now be used to open URLs - #25
+
 ## 0.11.2 - 2022.07.17
 
 - Updated translations
