@@ -1,9 +1,10 @@
 {
-  "app-id": "com.raggesilver.BlackBox",
+  "app-id": "com.raggesilver.BlackBox.Devel",
   "runtime": "org.gnome.Platform",
   "runtime-version": "42",
   "sdk": "org.gnome.Sdk",
-  "command": "blackbox-link-system-fonts",
+  "command": "blackbox",
+  "desktop-file-name-suffix" : " (Nightly)",
   "finish-args": [
     "--filesystem=home:ro",
     "--share=ipc",

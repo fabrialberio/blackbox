@@ -29,7 +29,7 @@ public class Terminal.Application : Adw.Application {
 
   public Application () {
     Object (
-      application_id: "com.raggesilver.BlackBox",
+      application_id: APP_ID,
       flags: ApplicationFlags.HANDLES_COMMAND_LINE
     );
 

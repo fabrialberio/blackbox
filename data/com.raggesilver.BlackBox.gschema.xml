@@ -20,7 +20,7 @@
       <default>false</default>
     </key>
     <key name="font" type="s">
-      <default>'Monospace 12'</default>
+      <default>'Monospace 10'</default>
       <summary>Font family and size</summary>
     </key>
     <key name="pretty" type="b">

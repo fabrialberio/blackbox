@@ -5,6 +5,12 @@ project('blackbox', ['c', 'vala'],
                    ],
 )
 
+if get_option('devel')
+  app_id = 'com.raggesilver.BlackBox.Devel'
+else
+  app_id = 'com.raggesilver.BlackBox'
+endif
+
 i18n = import('i18n')
 
 add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), language:'c')
