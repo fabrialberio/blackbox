@@ -4,6 +4,7 @@ blackbox_sources += files(
   'HeaderBar.vala',
   'PreferencesWindow.vala',
   'SearchToolbar.vala',
+  'ShortcutDialog.vala',
   'Terminal.vala',
   'TerminalTab.vala',
   'Window.vala',
