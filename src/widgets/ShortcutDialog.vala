@@ -29,8 +29,23 @@ public class Terminal.ShortcutDialog : Gtk.Dialog {
   public bool is_shortcut_set { get; protected set; default = false; }
   public string shortcut_name { get; protected set; }
 
+  public string heading_text {
+    owned get {
+      return _("Enter new shortcut for \"%s\"").printf (this.shortcut_name);
+    }
+  }
+
   construct {
     this.use_header_bar = (int) true;
+  }
+
+  public ShortcutDialog (
+    Gtk.Window parent,
+    string shortcut_name,
+    string? current_accel
+  ) {
+    Object (modal: true, transient_for: parent, shortcut_name: shortcut_name);
+
     this.title = _("Edit Shortcut");
     var hb = this.get_header_bar ();
 
@@ -60,10 +75,22 @@ public class Terminal.ShortcutDialog : Gtk.Dialog {
 
     var b = this.get_content_area ();
 
-    var heading = new Gtk.Label (_("Enter new shortcut to change XXX")) {
+    var heading = new Gtk.Label ("") {
       wrap = true,
       css_classes = { "heading" },
     };
+
+    this.bind_property ("heading-text", heading, "label", GLib.BindingFlags.SYNC_CREATE, null, null);
+
+    set_property_depends_on (this, "heading-text", this, "shortcut-name", null);
+
+    //  set_reactive (
+    //    heading, "label", () => {
+    //      return _("Enter new shortcut to change %s").printf (this.shortcut_name);
+    //    },
+    //    this, "shortcut-name",
+    //    null
+    //  );
 
     var foot_note = new Gtk.Label (_("Press Escape to cancel or Backspace to disable shortcut")) {
       wrap = true,
@@ -135,9 +162,5 @@ public class Terminal.ShortcutDialog : Gtk.Dialog {
     });
 
     (this as Gtk.Widget)?.add_controller (kpc);
-  }
-
-  public ShortcutDialog (Gtk.Window parent, string shortcut_name) {
-    Object (modal: true, transient_for: parent, shortcut_name: shortcut_name);
   }
 }

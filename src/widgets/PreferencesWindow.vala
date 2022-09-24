@@ -82,6 +82,10 @@ public class Terminal.PreferencesWindow : Adw.PreferencesWindow {
     }
   }
 
+  static construct {
+    typeof (ShortcutEditor).class_ref ();
+  }
+
   public PreferencesWindow (Window window) {
     Object (
       application: window.application,

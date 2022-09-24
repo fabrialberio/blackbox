@@ -26,7 +26,7 @@ public class Terminal.Keymap : Object, Json.Serializable {
   // User defined keybindings
   public Gee.MultiMap<string, string> keymap { get; protected set; }
   // Black Box's default keybindings.
-  private Gee.MultiMap<string, string> default_keymap;
+  public Gee.MultiMap<string, string> default_keymap;
 
   construct {
     this.default_keymap = new Gee.HashMultiMap<string, string> ();
@@ -98,6 +98,11 @@ public class Terminal.Keymap : Object, Json.Serializable {
     return this.default_keymap.contains (action)
       ? this.default_keymap.@get (action).to_array ()
       : null;
+  }
+
+  public void set_shortcut_for_action (string action, string? accel) {
+    this.keymap.remove_all (action);
+    this.keymap.@set (action, accel);
   }
 
   public override bool deserialize_property (
