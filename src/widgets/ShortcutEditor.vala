@@ -33,16 +33,17 @@ public class Terminal.ShortcutEditor : Adw.PreferencesPage {
   static construct {
     action_map = new Gee.HashMap<string, string> ();
 
-    action_map.@set ("app.focus-next-tab", _("Focus Next Tab"));
-    action_map.@set ("app.focus-previous-tab", _("Focus Previous Tab"));
-    action_map.@set ("app.new-window", _("New Window"));
-    action_map.@set ("win.switch-headerbar-mode", _("Toggle Header Bar"));
-    action_map.@set ("win.new_tab", _("New Tab"));
-    action_map.@set ("win.edit_preferences", _("Preferences"));
-    action_map.@set ("win.copy", _("Copy"));
-    action_map.@set ("win.paste", _("Paste"));
-    action_map.@set ("win.search", _("Search"));
-    action_map.@set ("win.fullscreen", _("Fullscreen"));
+    action_map.@set (ACTION_FOCUS_NEXT_TAB, _("Focus Next Tab"));
+    action_map.@set (ACTION_FOCUS_PREVIOUS_TAB, _("Focus Previous Tab"));
+    action_map.@set (ACTION_NEW_WINDOW, _("New Window"));
+    action_map.@set (ACTION_WIN_SWITCH_HEADER_BAR_MODE, _("Toggle Header Bar"));
+    action_map.@set (ACTION_WIN_NEW_TAB, _("New Tab"));
+    action_map.@set (ACTION_WIN_EDIT_PREFERENCES, _("Preferences"));
+    action_map.@set (ACTION_WIN_COPY, _("Copy"));
+    action_map.@set (ACTION_WIN_PASTE, _("Paste"));
+    action_map.@set (ACTION_WIN_SEARCH, _("Search"));
+    action_map.@set (ACTION_WIN_FULLSCREEN, _("Fullscreen"));
+    action_map.@set (ACTION_WIN_SHOW_HELP_OVERLAY, _("Keyboard Shortcuts"));
   }
 
   construct {

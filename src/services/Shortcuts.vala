@@ -18,6 +18,21 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
+namespace Terminal {
+  public const string ACTION_FOCUS_NEXT_TAB             = "app.focus-next-tab";
+  public const string ACTION_FOCUS_PREVIOUS_TAB         = "app.focus-previous-tab";
+  public const string ACTION_NEW_WINDOW                 = "app.new-window";
+
+  public const string ACTION_WIN_SWITCH_HEADER_BAR_MODE = "win.switch-headerbar-mode";
+  public const string ACTION_WIN_NEW_TAB                = "win.new_tab";
+  public const string ACTION_WIN_EDIT_PREFERENCES       = "win.edit_preferences";
+  public const string ACTION_WIN_COPY                   = "win.copy";
+  public const string ACTION_WIN_PASTE                  = "win.paste";
+  public const string ACTION_WIN_SEARCH                 = "win.search";
+  public const string ACTION_WIN_FULLSCREEN             = "win.fullscreen";
+  public const string ACTION_WIN_SHOW_HELP_OVERLAY      = "win.show-help-overlay";
+}
+
 // We load the user's keybindings and use them to override the default keymap.
 // This way, if we release a new version with an extra action that isn't present
 // in the user's file, we'll just use the default shortcut.
@@ -31,18 +46,20 @@ public class Terminal.Keymap : Object, Json.Serializable {
   construct {
     this.default_keymap = new Gee.HashMultiMap<string, string> ();
 
-    this.default_keymap.set ("app.focus-next-tab",        "<Control>Tab");
-    this.default_keymap.set ("app.focus-previous-tab",    "<Shift><Control>Tab");
-    this.default_keymap.set ("app.new-window",            "<Shift><Control>n");
-    this.default_keymap.set ("win.switch-headerbar-mode", "<Shift><Control>h");
-    this.default_keymap.set ("win.new_tab",               "<Shift><Control>t");
-    this.default_keymap.set ("win.edit_preferences",      "<Control>comma");
-    this.default_keymap.set ("win.copy",                  "<Shift><Control>c");
-    this.default_keymap.set ("win.paste",                 "<Shift><Control>v");
-    this.default_keymap.set ("win.search",                "<Shift><Control>f");
-    this.default_keymap.set ("win.fullscreen",            "F11");
+    this.default_keymap.set (ACTION_FOCUS_NEXT_TAB,              "<Control>Tab");
+    this.default_keymap.set (ACTION_FOCUS_PREVIOUS_TAB,          "<Shift><Control>Tab");
+    this.default_keymap.set (ACTION_NEW_WINDOW,                  "<Shift><Control>n");
+    this.default_keymap.set (ACTION_WIN_SWITCH_HEADER_BAR_MODE,  "<Shift><Control>h");
+    this.default_keymap.set (ACTION_WIN_NEW_TAB,                 "<Shift><Control>t");
+    this.default_keymap.set (ACTION_WIN_EDIT_PREFERENCES,        "<Control>comma");
+    this.default_keymap.set (ACTION_WIN_COPY,                    "<Shift><Control>c");
+    this.default_keymap.set (ACTION_WIN_PASTE,                   "<Shift><Control>v");
+    this.default_keymap.set (ACTION_WIN_SEARCH,                  "<Shift><Control>f");
+    this.default_keymap.set (ACTION_WIN_FULLSCREEN,              "F11");
+    this.default_keymap.set (ACTION_WIN_SHOW_HELP_OVERLAY,       "<Control>question");
   }
 
+  // Private constructor
   private Keymap () {}
 
   private static Keymap? instance = null;
@@ -73,7 +90,7 @@ public class Terminal.Keymap : Object, Json.Serializable {
     return instance;
   }
 
-  public void apply (unowned Gtk.Application app) {
+  public void apply (Gtk.Application app) {
     foreach (string key in this.default_keymap.get_keys ()) {
       // Get accelerators for this action from the user's keybindings or from
       // the default map, in case the user hasn't specified one
@@ -103,6 +120,19 @@ public class Terminal.Keymap : Object, Json.Serializable {
   public void set_shortcut_for_action (string action, string? accel) {
     this.keymap.remove_all (action);
     this.keymap.@set (action, accel);
+  }
+
+  public void reset_shortcut_for_action (string action) {
+    string[]? _default = this.get_default_shortcut_for_action (action);
+
+    if (_default == null) {
+      this.set_shortcut_for_action (action, null);
+    }
+    else {
+      foreach (unowned string shortcut in _default) {
+        this.set_shortcut_for_action (action, shortcut);
+      }
+    }
   }
 
   public override bool deserialize_property (
