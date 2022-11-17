@@ -102,12 +102,19 @@ public class Terminal.TerminalTab : Gtk.Box {
       // Make vala-language-server stop complaining
       this.terminal as Object,
       "scroll-unit-is-pixels",
-      BindingFlags.DEFAULT,
+      BindingFlags.SYNC_CREATE,
       (_, from, ref to) => {
         to = Settings.get_default ().show_scrollbars && from.get_boolean ();
         return true;
       },
       null
+    );
+
+    settings.bind_property (
+      "use-sixel",
+      this.terminal as Object,
+      "enable-sixel",
+      BindingFlags.SYNC_CREATE
     );
   }
 
@@ -128,7 +135,7 @@ public class Terminal.TerminalTab : Gtk.Box {
     preferences_section.append (_("Preferences"), "win.edit_preferences");
     menu.append_section (null, preferences_section);
 
-    bottom_section.append (_("Help"), "win.show-help-overlay");
+    bottom_section.append (_("Keyboard Shortcuts"), "win.show-help-overlay");
     bottom_section.append (_("About"), "app.about");
     menu.append_section (null, bottom_section);
 

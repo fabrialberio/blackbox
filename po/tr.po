@@ -1,460 +1,478 @@
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the blackbox package.
+# Turkish translation for Black Box.
+# Copyright (C) 2022 Black Box's COPYRIGHT HOLDER
+# This file is distributed under the same license as the Black Box package.
+#
+# Sabri Ünal <libreajans@gmail.com>, 2022.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: blackbox\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-28 19:31-0300\n"
-"PO-Revision-Date: 2022-08-20 00:05+0200\n"
-"Last-Translator: panmourovaty <dominikhejl@yahoo.com>\n"
-"Language-Team: Czech <>\n"
-"Language: cs\n"
+"Project-Id-Version: Black Box master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/raggesilver/blackbox\n"
+"POT-Creation-Date: 2022-09-29 21:13+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
+"Language-Team: Turkish <gnome-turk@gnome.org>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.4.2\n"
-
-#: data/com.raggesilver.BlackBox.desktop.in:3
-msgid "Black Box"
-msgstr "Black Box"
-
-#: data/com.raggesilver.BlackBox.desktop.in:9
-msgid "Terminal;terminal;shell;prompt;command;commandline;cmd;box;"
-msgstr ""
-"Terminal;terminal;shell;prompt;command;commandline;cmd;box;příkazový řádek;"
-"terminál;"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-KeywordsList: _;G_;C_;NC_\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: src\n"
+"X-Poedit-SearchPath-1: data\n"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:6
 msgid "Window width"
-msgstr "Šířka okna"
+msgstr "Pencere genişliği"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:10
 msgid "Window height"
-msgstr "Výška okna"
+msgstr "Pencere yüksekliği"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:14
 msgid "Whether or not to display borders around the window and tabs"
-msgstr "Zobrazovat okraje okolo oken a karet"
+msgstr "Pencere ve sekmelerin etrafındaki kenarlıkların gösterilme durumu"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:18
 msgid "Whether or not to remember window size"
-msgstr "Pamatovat si velikost okna"
+msgstr "Pencere boyutunu anımsama durumu"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:28
 msgid "Font family and size"
-msgstr "Rodina písem a velikost"
+msgstr "Yazı tipi ailesi ve boyutu"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:32
 msgid "Whether the window should inherit terminal theme's colors"
-msgstr "Má okno použít motiv stejný jako terminál"
+msgstr "Pencerenin uçbirim temasının renklerini miras alma durumu"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:36
 msgid "Whether or not tabs should expand to fill tab bar"
-msgstr "Mají karty vyplnit celou šířku záhlaví"
+msgstr "Sekmelerin sekme çubuğunu dolduracak şekilde genişletilme durumu"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:40
 msgid "Whether the headerbar should be shown or not"
-msgstr "Má být záhlaví zobrazeno"
+msgstr "Başlık çubuğunun gösterilme durumu"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:44
 msgid "Whether or not to display a menu button in the headerbar"
-msgstr "Zobrazovat tlačítko menu v záhlaví"
+msgstr "Başlık çubuğunda menü düğmesinin gösterilme durumu"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:48
 msgid ""
 "Whether or not to draw a 1px line under the header bar when there's a single "
 "tab open"
-msgstr "Zobrazovat 1px linku pod záhlavím když je otevřena pouze jedna karta"
+msgstr ""
+"Tek sekme açıkken başlık çubuğunun altına 1 piksellik çizgi çizilme durumu"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:52
 msgid "Whether or not to reserve an area for dragging the header bar"
-msgstr "Rezervovat místo pro přetahování okna"
+msgstr "Başlık çubuğunu sürüklemek için bir alan ayrılma durumu"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:56
 msgid "Whether or not to show scrollbars"
-msgstr "Zobrazovat posuvníky"
+msgstr "Kaydırma çubuklarının gösterilme durumu"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:60
 msgid "Whether overlay scrolling should be enabled"
-msgstr "Použít posuvníky co překrývají obsah"
+msgstr "Yer paylaşımlı kaydırmanın etkinleştirilme durumu"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:64
 msgid "If enabled, terminals will scroll by pixels instead of rows"
-msgstr "Pokud povoleno terminál bude skrolovat na základě pixelů místo řádků"
+msgstr "Etkinleştirilirse, uçbirimler satır yerine piksel olarak kaydırılır"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:68
 msgid "Enable to limit terminal scrollback"
-msgstr "Povolte pro omezení skrolování terminálu"
+msgstr "Uçbirim geri kaydırmasını sınırlamak için etkinleştirin"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:72
 msgid "Number of lines stored in scrollback"
-msgstr "Počet linek uložených ke skrolování"
+msgstr "Geri kaydırmada saklanacak satır sayısı"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:76
 msgid "If enabled, floating controls will be shown in headerless mode"
-msgstr "Pokud zapnuto, plovoucí ovládací panel bude zobrazen v bezešvém režimu"
+msgstr "Etkinleştirilirse, yüzen denetimler başlıksız kipte gösterilecektir"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:80
 msgid ""
 "Hoverable area (in pixels) at the top of the window to trigger floating "
 "controls"
 msgstr ""
-"Oblast (v pixelech) na vršku okna na kterou když najedete tak se zobrazí "
-"panel"
+"Yüzen denetimleri tetiklemek için pencerenin üstündeki gezinebilir alan "
+"(piksel olarak)"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:84
 msgid "Delay time before showing floating controls"
-msgstr "Prodleva než se zobrazí plovoucí panel"
+msgstr "Yüzen denetimleri göstermeden önceki gecikme süresi"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:88
 msgid "The light color scheme for the terminal"
-msgstr "Světlý motiv terminálu"
+msgstr "Uçbirim için açık renk şeması"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:92
 msgid "The dark color scheme for the terminal"
-msgstr "Tmavý motiv terminálu"
+msgstr "Uçbirim için koyu renk şeması"
 
 #. 0 = Follow system, 1 = Light Style, 2 = Dark Style
 #: data/com.raggesilver.BlackBox.gschema.xml:97
 msgid "Style preference"
-msgstr "Preference motivu"
+msgstr "Biçem tercihleri"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:101
 msgid "Amount of padding around terminal widgets (top, right, bottom, left)"
-msgstr "Odsazení okolo terminálu (nahoře, vpravo, dole, vlevo)"
+msgstr "Uçbirim parçacıklarının etrafındaki dolgu miktarı (üst, sağ, alt, sol)"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:105
 msgid "Terminal cell width"
-msgstr "Šířka buňky terminálu"
+msgstr "Uçbirim hücre genişliği"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:109
 msgid "Terminal cell height"
-msgstr "Výška buňky terminálu"
+msgstr "Uçbirim hücre yüksekliği"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:113
 msgid "Cursor shape"
-msgstr "Tvar kurzoru"
+msgstr "İmleç biçimi"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:117
 msgid "If enabled, ctrl+c and ctrl+v will work for copy/paste"
-msgstr ""
-"Pokud zapnuto, ctrl+c a ctrl+v bude možno použít pro kopírování/vkládání"
+msgstr "Etkinleştirilirse, ctrl+c ve ctrl+v kopyala/yapıştır olarak çalışır"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:121
 msgid ""
 "If enabled, the tab bar will be replaced with a title label when there's a "
 "single open tab"
 msgstr ""
-"Pokud povoleno, lišta karet bude nahrazena titulkem, pokud je otevřená jedna "
-"karta"
+"Etkinleştirilirse, tek açık sekme olduğunda sekme çubuğu başlık etiketiyle "
+"değiştirilir"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:125
 msgid "If enabled, a single open tab will blend with the headerbar color"
-msgstr ""
-"Pokud zapnuto a je otevřená pouze jedna karta tak splyne s barvou záhlaví"
+msgstr "Etkinleştirilirse, tek açık sekme başlık çubuğu rengiyle karıştırılır"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:129
 msgid "Whether to spawn shell in login mode"
-msgstr "Spouštět shell v přihlašovacím režimu"
+msgstr "Oturum açma kipinde kabuğun oluşturulma durumu"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:133
 msgid "Whether to use a custom command instead of the user's shell"
-msgstr "Použít vlastní příkaz místo uživatelova shellu"
+msgstr "Kullanıcı kabuğu yerine özel komut kullanılma durumu"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:137
 msgid "Custom command to use instead of the user's shell"
-msgstr "Vlastní příkaz který bude použit místo uživatelského shellu"
+msgstr "Kullanıcı kabuğu yerine kullanılacak özel komut"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:144
 msgid ""
 "Whether clicking next on the last search result should return to the first"
 msgstr ""
-"Zda se má kliknutím na další na poslední výsledek vyhledávání vrátit na první"
+"Son arama sonucunun sonraki tıklanmasının ilk sonuca dönmesi gerekmesi durumu"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:148
 msgid "Whether search should be case sensitive"
-msgstr "Má být hledání citlivé na velikost písmen (case sensitive)"
+msgstr "Aramanın büyük/küçük harfe duyarlı olma durumu"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:152
 msgid "Whether search should only match entire words"
-msgstr "Má hledání odpovídat pouze celým slovům"
+msgstr "Aramanın yalnızca tam sözcüklerle eşleşmesi gerekme durumu"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:156
 msgid "Whether search should be performed using regular expressions"
-msgstr "Má hledání být prováděno regulárními výrazy"
+msgstr "Aramanın düzenli ifadeler kullanılarak yapılma durumu"
+
+#: src/CommandLine.vala:47
+msgid "Show app version"
+msgstr "Oykulama sürümünü göster"
+
+#: src/CommandLine.vala:56
+msgid "Set current working directory"
+msgstr "Geçerli çalışma dizinini ayarla"
+
+#: src/CommandLine.vala:65
+msgid "Execute command in a terminal"
+msgstr "Komutu uçbirimde çalıştır"
+
+#: src/CommandLine.vala:74
+msgid "Show help"
+msgstr "Yardım göster"
+
+#: src/CommandLine.vala:121
+#, c-format
+msgid "Run %s --help to get help\n"
+msgstr "Yardım almak için %s --help komutunu çalıştırın\n"
 
 #: src/gtk/help-overlay.ui:10
 msgctxt "shortcut window"
 msgid "Window"
-msgstr "Okno"
+msgstr "Pencere"
 
 #: src/gtk/help-overlay.ui:13
 msgctxt "shortcut window"
 msgid "New window"
-msgstr "Nové okno"
+msgstr "Yeni pencere"
 
 #: src/gtk/help-overlay.ui:19
 msgctxt "shortcut window"
 msgid "New tab"
-msgstr "Nová karta"
+msgstr "Yeni sekme"
 
 #: src/gtk/help-overlay.ui:25
 msgctxt "shortcut window"
 msgid "Close tab"
-msgstr "Zavřít kartu"
+msgstr "Sekmeyi kapat"
 
 #: src/gtk/help-overlay.ui:32
 msgctxt "shortcut window"
 msgid "Switch headbar mode"
-msgstr "Přepnout režim záhlaví"
+msgstr "Başlık kipini değiştir"
 
 #: src/gtk/help-overlay.ui:38
 msgctxt "shortcut window"
 msgid "Toggle fullscreen"
-msgstr "Přepnout na celou obrazovku"
+msgstr "Tam ekranı aç/kapat"
 
 #: src/gtk/help-overlay.ui:45
 msgctxt "shortcut window"
 msgid "Terminal"
-msgstr "Terminál"
+msgstr "Uçbirim"
 
 #: src/gtk/help-overlay.ui:48
 msgctxt "shortcut window"
 msgid "Search"
-msgstr "Hledat"
+msgstr "Arama"
 
 #: src/gtk/help-overlay.ui:54
 msgctxt "shortcut window"
 msgid "Copy"
-msgstr "Kopírovat"
+msgstr "Kopyala"
 
 #: src/gtk/help-overlay.ui:60
 msgctxt "shortcut window"
 msgid "Paste"
-msgstr "Vložit"
+msgstr "Yapıştır"
 
 #: src/gtk/help-overlay.ui:66
 msgctxt "shortcut window"
 msgid "Zoom in"
-msgstr "Přiblížit"
+msgstr "Yakınlaştır"
 
 #: src/gtk/help-overlay.ui:72
 msgctxt "shortcut window"
 msgid "Zoom out"
-msgstr "Oddálit"
+msgstr "Uzaklaştır"
 
 #: src/gtk/help-overlay.ui:80
 msgctxt "shortcut window"
 msgid "Navigation"
-msgstr "Navigace"
+msgstr "Gezinme"
 
 #: src/gtk/help-overlay.ui:83
 msgctxt "shortcut window"
 msgid "Focus next tab"
-msgstr "Zaměřit se na další Kartu"
+msgstr "Sonraki sekmeye odaklan"
 
 #: src/gtk/help-overlay.ui:89
 msgctxt "shortcut window"
 msgid "Focus previous tab"
-msgstr "Zaměřit se na předchozí Kartu"
+msgstr "Önceki sekmeye odaklan"
 
 #: src/gtk/help-overlay.ui:96
 msgctxt "shortcut window"
 msgid "Switch to Tab"
-msgstr "Přepnout na Kartu"
+msgstr "Sekmeye Geç"
 
 #: src/gtk/help-overlay.ui:102
 msgctxt "shortcut window"
 msgid "Switch to last Tab"
-msgstr "Přepnout na poslední Kartu"
+msgstr "Son sekmeye geç"
 
 #: src/gtk/help-overlay.ui:109
 msgctxt "shortcut window"
 msgid "General"
-msgstr "Obecné"
+msgstr "Genel"
 
 #: src/gtk/help-overlay.ui:112
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr "Zobrazit Zkratky"
+msgstr "Kısayolları Göster"
 
 #: src/gtk/preferences-window.ui:11
 msgid "General"
-msgstr "Obecné"
+msgstr "Genel"
 
 #: src/gtk/preferences-window.ui:15
 msgid "Window"
-msgstr "Okno"
+msgstr "Pencere"
 
 #: src/gtk/preferences-window.ui:19
 msgid "Remember Window Size"
-msgstr "Pamatovat Velikost Okna"
+msgstr "Pencere Boyutunu Anımsa"
 
 #: src/gtk/preferences-window.ui:30
 msgid "Show Borders"
-msgstr "Zobrazit okraje"
+msgstr "Kenarlıkları Göster"
 
 #: src/gtk/preferences-window.ui:31
 msgid "Enable to draw a border around the window and the active tab."
-msgstr "Zvýraznit okraj kolem okna a aktivní karty."
+msgstr "Pencerenin ve etkin sekmenin etrafına kenarlık çizmeyi etkinleştir."
 
 #: src/gtk/preferences-window.ui:42
 msgid "Theme Integration"
-msgstr "Integrace Motivu"
+msgstr "Tema Entegrasyonu"
 
 #: src/gtk/preferences-window.ui:43
 msgid "Style window with terminal theme colors."
-msgstr "Má okno použít motiv stejný jako terminál."
+msgstr "Pencereyi uçbirim tema renkleriyle biçimlendir."
 
 #: src/gtk/preferences-window.ui:53
 msgid "Style Preference"
-msgstr "Nastavení stylu"
+msgstr "Biçem Tercihleri"
 
 #: src/gtk/preferences-window.ui:57
 msgid "Follow System"
-msgstr "Podle systému"
+msgstr "Sistemi İzle"
 
 #: src/gtk/preferences-window.ui:58
 msgid "Light Style"
-msgstr "Světlý motiv"
+msgstr "Açık Biçem"
 
 #: src/gtk/preferences-window.ui:59
 msgid "Dark Style"
-msgstr "Tmavý motiv"
+msgstr "Koyu Biçem"
 
 #: src/gtk/preferences-window.ui:69
 msgid "Tabs"
-msgstr "Karty"
+msgstr "Sekmeler"
 
 #: src/gtk/preferences-window.ui:73
 msgid "Expand Tabs"
-msgstr "Rozšířit karty"
+msgstr "Sekmeleri Genişlet"
 
 #: src/gtk/preferences-window.ui:83
 msgid "Single Tab Mode"
-msgstr "Režim jedné karty"
+msgstr "Tek Sekme Kipi"
 
 #: src/gtk/preferences-window.ui:88
 msgid "Hide Single Tab"
-msgstr "Skrýt jednu kartu"
+msgstr "Tek Sekmeyi Gizle"
 
 #: src/gtk/preferences-window.ui:89
 msgid ""
 "Replace tab bar with a title label when a single tab is open. Easier to drag "
 "the window."
 msgstr ""
-"Nahradit panel karet titulkem pokud je otevřená jedna karta. Jednoduší "
-"přesouvání okna."
+"Tek sekme açıkken sekme çubuğunu başlık etiketiyle değiştir. Pencereyi "
+"sürüklemek daha kolaydır."
 
 #: src/gtk/preferences-window.ui:101
 msgid "Stealth Single Tab"
-msgstr "Skrytá Jedna Karta"
+msgstr "Gizli Sekme Kipi"
 
 #: src/gtk/preferences-window.ui:102
 msgid "Blend single tab with header bar."
-msgstr "Pokud je otevřená jediná karta splynout ji se záhlavím."
+msgstr "Tek sekmeyi başlık çubuğuyla karıştır."
 
 #: src/gtk/preferences-window.ui:117
 msgid "Header Bar"
-msgstr "Záhlaví"
+msgstr "Başlık Çubuğu"
 
 #: src/gtk/preferences-window.ui:121
 msgid "Show Header Bar"
-msgstr "Zobrazit záhlaví"
+msgstr "Başlık Çubuğunu Göster"
 
 #: src/gtk/preferences-window.ui:132
 msgid "Show Menu Button"
-msgstr "Zobrazit tlačítko Menu"
+msgstr "Menü Düğmesini Göster"
 
 #: src/gtk/preferences-window.ui:143
 msgid "Drag Area"
-msgstr "Oblast přetahování"
+msgstr "Sürükleme Alanı"
 
 #: src/gtk/preferences-window.ui:144
 msgid "Enable to reserve some space on the left side to drag the window."
-msgstr "Rezervovat místo na levé straně kvůli přetahování okna."
+msgstr ""
+"Pencereyi sürüklemek için sol tarafta biraz yer ayırmak için etkinleştirin."
 
 #: src/gtk/preferences-window.ui:156
 msgid "Draw Line Under Header Bar"
-msgstr "Zobrazit linku pod záhlavím"
+msgstr "Başlık Çubuğunun Altına Çizgi Çiz"
 
 #: src/gtk/preferences-window.ui:157
 msgid ""
 "Enable to draw a line under the header bar when a single tab is open. "
 "Requires \"Show Borders\"."
 msgstr ""
-"Zobrazit linku pod záhlavím pokud je otevřena jedna karta. Vyžaduje "
-"\"Zobrazit okraje\"."
+"Tek sekme açıldığında başlık çubuğunun altına çizgi çizmeyi etkinleştir. "
+"\"Kenarlıkları Göster\" gerektirir."
 
 #: src/gtk/preferences-window.ui:167
 msgid "Floating Controls"
-msgstr "Plovoucí ovládání"
+msgstr "Yüzen Denetimler"
 
 #: src/gtk/preferences-window.ui:170
 msgid "Show Floating Controls"
-msgstr "Zobrazit plovoucí ovládání"
+msgstr "Yüzen Denetimleri Göster"
 
 #: src/gtk/preferences-window.ui:171
 msgid "Show floating controls when header bar is hidden."
-msgstr "Zobrazit plovoucí ovládací panel když záhlaví je skryté."
+msgstr "Başlık çubuğu gizlendiğinde yüzen denetimleri göster."
 
 #: src/gtk/preferences-window.ui:183
 msgid "Floating Controls Hover Area"
-msgstr "Oblast pro zobrazení plovoucího ovládání"
+msgstr "Yüzen Denetimleri Gösterim Alanı"
 
 #: src/gtk/preferences-window.ui:184
 msgid ""
 "Hoverable area (in pixels) at the top of the window to trigger floating "
 "controls."
 msgstr ""
-"Oblast (v pixelech) na vršku okna na kterou když najedete tak se zobrazí "
-"panel."
+"Yüzen denetimleri tetiklemek için pencerenin üstündeki gezinebilir alan "
+"(piksel olarak)."
 
 #: src/gtk/preferences-window.ui:196
 msgid "Delay Before Show Floating Controls"
-msgstr "Prodleva před zobrazením plovoucího panelu"
+msgstr "Yüzen Denetimleri Göstermeden Önceki Gecikme"
 
 #: src/gtk/preferences-window.ui:197
 msgid "Delay time (ms) before show floating controls."
-msgstr "Prodleva (v ms) před zobrazením plovoucího ovládání."
+msgstr "Yüzen denetimleri göstermeden önceki gecikme süresi (ms)."
 
 #: src/gtk/preferences-window.ui:214 src/gtk/preferences-window.ui:278
 msgid "Terminal"
-msgstr "Terminál"
+msgstr "Uçbirim"
 
 #: src/gtk/preferences-window.ui:219
 msgid "Text"
-msgstr "Text"
+msgstr "Metin"
 
 #: src/gtk/preferences-window.ui:223
 msgid "Font"
-msgstr "Font"
+msgstr "Yazı Tipi"
 
 #: src/gtk/preferences-window.ui:235
 msgid "Cell Spacing"
-msgstr "Rozestup buněk"
+msgstr "Hücre Boşluğu"
 
 #: src/gtk/preferences-window.ui:238
 msgid "Width"
-msgstr "Šířka"
+msgstr "Genişlik"
 
 #: src/gtk/preferences-window.ui:250
 msgid "Height"
-msgstr "Výška"
+msgstr "Yükseklik"
 
 #: src/gtk/preferences-window.ui:265
 msgid "Easy Copy &amp; Paste"
-msgstr "Jednoduché Kopírování &amp; Vložení"
+msgstr "Kolay Kopyala ve Yapıştır"
 
 #: src/gtk/preferences-window.ui:266
 msgid "Use ctrl+c/ctrl+v for copy/paste."
-msgstr "Použít ctrl+c/ctrl+v pro kopírování/vložení."
+msgstr "Kopyalama/Yapıştırma için ctrl+c/ctrl+v kullan."
 
 #: src/gtk/preferences-window.ui:281
 msgid "Cursor"
-msgstr "Kurzor"
+msgstr "İmleç"
 
 #: src/gtk/preferences-window.ui:285
 msgid "Block"
@@ -466,79 +484,79 @@ msgstr "IBeam"
 
 #: src/gtk/preferences-window.ui:287
 msgid "Underline"
-msgstr "Podtržení"
+msgstr "Alt Çizgi"
 
 #: src/gtk/preferences-window.ui:295
 msgid "Padding"
-msgstr "Okraj"
+msgstr "Doldurma"
 
 #: src/gtk/preferences-window.ui:311
 msgid "Scrolling"
-msgstr "Skrolování"
+msgstr "Kaydırma"
 
 #: src/gtk/preferences-window.ui:314
 msgid "Scrollbars"
-msgstr "Posuvníky"
+msgstr "Kaydırma Çubukları"
 
 #: src/gtk/preferences-window.ui:317
 msgid "Show Scrollbars"
-msgstr "Zobrazit Posuvníky"
+msgstr "Kaydırma Çubuklarını Göster"
 
 #: src/gtk/preferences-window.ui:328
 msgid "Use Overlay Scrolling"
-msgstr "Použít překrývající Posuvníky"
+msgstr "Yer Paylaşımlı Kaydırmayı Kullan"
 
 #: src/gtk/preferences-window.ui:342
 msgid "Set Scrollback Limit"
-msgstr "Nastavit limit skrolování"
+msgstr "Geri Kaydırma Sınırını Ayarla"
 
 #: src/gtk/preferences-window.ui:353
 msgid "Scrollback Lines"
-msgstr "Skrolovací čáry"
+msgstr "Geri Kaydırılacak Satırlar"
 
 #: src/gtk/preferences-window.ui:369
 msgid "Command"
-msgstr "Příkaz"
+msgstr "Komut"
 
 #: src/gtk/preferences-window.ui:373
 msgid "Run Command as Login Shell"
-msgstr "Spustit příkaz jako přihlašovací shell"
+msgstr "Komutu Giriş Kabuğu Olarak Çalıştır"
 
 #: src/gtk/preferences-window.ui:384
 msgid "Use Custom Command"
-msgstr "Použít vlastní příkaz"
+msgstr "Özel Komut Kullan"
 
 #: src/gtk/preferences-window.ui:394
 msgid "Custom Command"
-msgstr "Vlastní příkaz"
+msgstr "Özel Komut"
 
 #: src/gtk/preferences-window.ui:401
 msgid "Theme"
-msgstr "Motiv"
+msgstr "Tema"
 
 #: src/gtk/preferences-window.ui:412
 msgid "Open folder"
-msgstr "Otevřít složku"
+msgstr "Klasör aç"
 
 #: src/gtk/preferences-window.ui:420
 msgid "Get more themes online"
-msgstr "Získat více motivů online"
+msgstr "Çevrimiçi olarak daha fazla tema edin"
 
 #: src/gtk/preferences-window.ui:434
 msgid "Set your preferred theme for light and dark styles."
-msgstr "Zvolte svůj světlý a tmavý motiv."
+msgstr "Açık ve koyu biçemler için tercih ettiğiniz temayı ayarlayın."
 
 #: src/gtk/preferences-window.ui:449
 msgid "Light Theme"
-msgstr "Světlý Motiv"
+msgstr "Açık Tema"
 
 #: src/gtk/preferences-window.ui:455
 msgid "Dark Theme"
-msgstr "Tmavý Motiv"
+msgstr "Koyu Tema"
 
 #: src/gtk/preferences-window.ui:463
 msgid "Only display themes for the current style"
-msgstr "Zobrazovat motivy pouze pro současný styl"
+msgstr "Yalnızca geçerli biçem için temaları göster"
 
 #: src/gtk/preferences-window.ui:471
 msgid ""
@@ -546,17 +564,17 @@ msgid ""
 "a light color scheme while using the dark app style or a dark color scheme "
 "while using the light app style."
 msgstr ""
-"Aby byla zajištěna čitelnost, bude „Integrace Motivu“ deaktivována pokud "
-"vyberete světlé barevné schéma při použití tmavého stylu aplikace nebo tmavé "
-"barevné schéma při použití světlého stylu aplikace."
+"Okunabilirliği sağlamak için, koyu uygulama biçemini kullanırken açık renk "
+"şeması ya da açık uygulama biçemini kullanırken koyu renk şeması seçerseniz "
+"\"Tema Entegrasyonu\" devre dışı bırakılır."
 
 #: src/gtk/preferences-window.ui:498
 msgid "Advanced"
-msgstr "Pokročilé"
+msgstr "Gelişmiş"
 
 #: src/gtk/preferences-window.ui:502
 msgid "Experimental"
-msgstr "Experimentální"
+msgstr "Deneysel"
 
 #: src/gtk/preferences-window.ui:503
 msgid ""
@@ -564,111 +582,72 @@ msgid ""
 "<a href=\"https://gitlab.gnome.org/raggesilver/blackbox/-/issues\">report "
 "bugs</a>."
 msgstr ""
-"Funkce v této sekci jsou nestabilní. Prosím otestujte a nalezené chyby <a "
-"href=\"https://gitlab.gnome.org/raggesilver/blackbox/-/issues\">nahlaste "
-"zde</a>."
+"Bu bölümdeki özelliklerin riskli olduğu bilinmektedir. Lütfen test etmekten "
+"ve <a href=\"https://gitlab.gnome.org/raggesilver/blackbox/-/issues"
+"\">hataları bildirmekten</a> çekinmeyin."
 
 #: src/gtk/preferences-window.ui:507
 msgid "Pixel Scrolling"
-msgstr "Pixelové skrolování"
+msgstr "Piksel Kaydırma"
 
 #: src/gtk/preferences-window.ui:508
 msgid ""
 "Scroll by pixel units instead of scrolling by lines. \"Show scrollbars\" "
 "must be enabled."
 msgstr ""
-"Skrolovat na základě pixelů místo řádků. \"Zobrazit posuvníky\" musí být "
-"povoleno."
+"Satırlara göre kaydırmak yerine piksel birimlerine göre kaydırın. \"Kaydırma "
+"çubuklarını göster\" etkinleştirilmelidir."
 
 #: src/gtk/preferences-window.ui:520
 msgid "Danger Zone"
-msgstr "Nebezpečná zóna"
+msgstr "Tehlikeli Bölge"
 
 #: src/gtk/preferences-window.ui:523
 msgid "Reset Preferences"
-msgstr "Resetovat nastavení"
+msgstr "Tercihleri Sıfırla"
 
 #: src/gtk/preferences-window.ui:524
 msgid ""
 "This will revert all settings back to default. Your extra themes will not be "
 "removed."
 msgstr ""
-"Toto vrátí všechna nastavení do výchozích hodnot. Vaše motivy nebudou "
-"odstraněny."
+"Bu, tüm ayarları varsayılana döndürür. Ek temalarınız kaldırılmayacaktır."
 
 #: src/gtk/preferences-window.ui:529
 msgid "Reset preferences"
-msgstr "Resetovat nastavení"
+msgstr "Tercihleri sıfırla"
 
-#: src/CommandLine.vala:47
-msgid "Show app version"
-msgstr "Zobrazit verzi aplikace"
+#: src/gtk/search-toolbar.ui:20
+msgid "Find"
+msgstr "Bul"
 
-#: src/CommandLine.vala:56
-msgid "Set current working directory"
-msgstr "Nastavit současnou pracovní složku"
+#: src/gtk/search-toolbar.ui:42
+msgid "Previous result"
+msgstr "Önceki sonuç"
 
-#: src/CommandLine.vala:65
-msgid "Execute command in a terminal"
-msgstr "Spustit příkaz v terminálu"
+#: src/gtk/search-toolbar.ui:48
+msgid "Next result"
+msgstr "Sonraki sonuç"
 
-#: src/CommandLine.vala:74
-msgid "Show help"
-msgstr "Zobrazit nápovědu"
+#: src/gtk/search-toolbar.ui:91
+msgid "Search wraps around"
+msgstr "Aramayı başa sar"
 
-#: src/CommandLine.vala:121
-#, c-format
-msgid "Run %s --help to get help\n"
-msgstr "Spusť %s --pro získání nápovědy\n"
+#: src/gtk/search-toolbar.ui:96
+msgid "Match is case sensitive"
+msgstr "Eşleşme büyük/küçük harfe duyarlı"
 
-#: src/widgets/Window.vala:142 src/widgets/HeaderBar.vala:30
-msgid "Fullscreen"
-msgstr "Celá obrazovka"
+#: src/gtk/search-toolbar.ui:101
+msgid "Match entire words only"
+msgstr "Yalnızca tam sözcükleri eşleştir"
 
-#: src/widgets/Window.vala:145
-msgid "Show headerbar"
-msgstr "Zobrazit záhlaví"
-
-#: src/widgets/Window.vala:161
-msgid "Menu"
-msgstr "Menu"
-
-#: src/widgets/TerminalTab.vala:120
-msgid "New Tab"
-msgstr "Nová Karta"
-
-#: src/widgets/TerminalTab.vala:121
-msgid "New Window"
-msgstr "Nové Okno"
-
-#: src/widgets/TerminalTab.vala:123
-msgid "Copy"
-msgstr "Kopírovat"
-
-#: src/widgets/TerminalTab.vala:124
-msgid "Paste"
-msgstr "Vložit"
-
-#: src/widgets/TerminalTab.vala:128 src/widgets/HeaderBar.vala:31
-msgid "Preferences"
-msgstr "Nastavení"
-
-#: src/widgets/TerminalTab.vala:131 src/widgets/HeaderBar.vala:32
-msgid "Help"
-msgstr "Nápověda"
-
-#: src/widgets/TerminalTab.vala:132 src/widgets/HeaderBar.vala:33
-msgid "About"
-msgstr "O Aplikaci"
-
-#: src/widgets/PreferencesWindow.vala:459
-msgid "Terminal Font"
-msgstr "Font Terminálu"
+#: src/gtk/search-toolbar.ui:106
+msgid "Match using regular expression"
+msgstr "Düzenli ifade kullanılarak eşleştir"
 
 #: src/utils/Constants.vala:34
 msgid "You can still access the menu by right-clicking any terminal."
-msgstr ""
-"Menu můžete pořád otevřít pomocí kliknutí pravým tlačítkem v terminálu."
+msgstr "Yine de herhangi bir uçbirime sağ tıklayarak menüye erişebilirsiniz."
 
 #: src/utils/Constants.vala:36
 #, c-format
@@ -677,18 +656,61 @@ msgid ""
 "progress has been made on this port, copying has yet to be implemented. This "
 "means there's currently no way to copy text in %s."
 msgstr ""
+"%s, terminal widget'ı olarak erken bir Gtk 4 VTE uyarlaması kullanır. Bu "
+"uyarlamada bir hayli ilerleme kaydedilmiş olsa da, kopyalama henüz mümkün "
+"değil. Bunun anlamı %s içindeki metni kopyalamanın henüz bir yolu yok "
+"anlamına gelmektedir."
 
-#~ msgid "Tabs and Headerbar"
-#~ msgstr "Karty a Záhlaví"
+#: src/widgets/AboutDialog.vala:35
+msgid "Donate"
+msgstr "Bağış Yap"
 
-#, c-format
-#~ msgid ""
-#~ "Open <a href=\"file://%s\">themes folder</a>. Get more themes <a "
-#~ "href=\"%s\">online</a>."
-#~ msgstr ""
-#~ "Otevřít <a href=\"file://%s\">složku s motivy</a>. Více motivů naleznete "
-#~ "<a href=\"%s\">online</a>."
+#: src/widgets/HeaderBar.vala:30 src/widgets/Window.vala:142
+msgid "Fullscreen"
+msgstr "Tam ekran"
 
-#~ msgctxt "shortcut window"
-#~ msgid "Quit"
-#~ msgstr "Verlassen"
+#: src/widgets/HeaderBar.vala:31 src/widgets/TerminalTab.vala:128
+msgid "Preferences"
+msgstr "Tercihler"
+
+#: src/widgets/HeaderBar.vala:32 src/widgets/TerminalTab.vala:131
+msgid "Help"
+msgstr "Yardım"
+
+#: src/widgets/HeaderBar.vala:33 src/widgets/TerminalTab.vala:132
+msgid "About"
+msgstr "Hakkında"
+
+#: src/widgets/PreferencesWindow.vala:459
+msgid "Terminal Font"
+msgstr "Uçbirim Yazı Tipi"
+
+#: src/widgets/TerminalTab.vala:120
+msgid "New Tab"
+msgstr "Yeni Sekme"
+
+#: src/widgets/TerminalTab.vala:121
+msgid "New Window"
+msgstr "Yeni Pencere"
+
+#: src/widgets/TerminalTab.vala:123
+msgid "Copy"
+msgstr "Kopyala"
+
+#: src/widgets/TerminalTab.vala:124
+msgid "Paste"
+msgstr "Yapıştır"
+
+#: src/widgets/Window.vala:145
+msgid "Show headerbar"
+msgstr "Başlık çubuğunu göster"
+
+#: src/widgets/Window.vala:161
+msgid "Menu"
+msgstr "Menü"
+
+#~ msgid "Black Box"
+#~ msgstr "Kara Kutu"
+
+#~ msgid "Terminal;terminal;shell;prompt;command;commandline;cmd;box;"
+#~ msgstr "Uçbirim;uçbirim;shell;kabuk;komut satırı;komut;cmd;box;kutu;"

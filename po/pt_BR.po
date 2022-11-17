@@ -1,551 +1,561 @@
-# Russian translation for Black Box
-# Copyright (C) 2022 Black Box’s COPYRIGHT HOLDER
-# This file is distributed under the same license as the Black Box package.
-# Translators (this list can grow):
-# acephale <acephaleee@protonmail.com>, 2022.
+# Portuguese Brazilian translations for blackbox package.
+# Copyright (C) 2022 THE blackbox'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the blackbox package.
+# Translators:
+# Ciro Mota <contato.ciromota@outlook.com>, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: blackbox\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-28 19:31-0300\n"
-"PO-Revision-Date: 2022-08-18 05:51+0300\n"
-"Last-Translator: acephale <acephaleee@protonmail.com>\n"
-"Language-Team: Русский <gnome-cyr@gnome.org>\n"
-"Language: ru\n"
+"POT-Creation-Date: 2022-08-15 15:52-0300\n"
+"PO-Revision-Date: 2022-08-31 16:17-0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 3.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1.1\n"
 
 #: data/com.raggesilver.BlackBox.desktop.in:3
 msgid "Black Box"
-msgstr "Чёрный Ящик"
+msgstr "Black Box"
 
 #: data/com.raggesilver.BlackBox.desktop.in:9
 msgid "Terminal;terminal;shell;prompt;command;commandline;cmd;box;"
-msgstr "Терминал;терминал;оболочка;строка;команда;командная строка;cmd;box;"
+msgstr ""
+"Terminal;terminal;shell;prompt;command;commandline;cmd;box;comando;linha;"
+"console;"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:6
 msgid "Window width"
-msgstr "Ширина окна"
+msgstr "Largura da janela"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:10
 msgid "Window height"
-msgstr "Высота окна"
+msgstr "Altura da janela"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:14
+#, fuzzy
 msgid "Whether or not to display borders around the window and tabs"
-msgstr "Должны ли отображаться границы вокруг окна и вкладок"
+msgstr "Exibir ou não bordas ao redor da janela e de abas"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:18
 msgid "Whether or not to remember window size"
-msgstr "Запоминать ли размер окна"
+msgstr "Lembrar ou não o tamanho da janela"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:28
 msgid "Font family and size"
-msgstr "Семейство и размер шрифта"
+msgstr "Família de fontes e tamanhos"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:32
 msgid "Whether the window should inherit terminal theme's colors"
-msgstr "Должно ли окно использовать цвета темы терминала"
+msgstr "Se a janela deve herdar as cores do tema do terminal"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:36
 msgid "Whether or not tabs should expand to fill tab bar"
-msgstr "Должны ли вкладки расширяться для заполнения панели вкладок"
+msgstr "Se as abas devem ou não se expandir para preencher a barra de abas"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:40
 msgid "Whether the headerbar should be shown or not"
-msgstr "Должна ли отображаться панель заголовка"
+msgstr "Se a barra de cabeçalho deve ser mostrada ou não"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:44
 msgid "Whether or not to display a menu button in the headerbar"
-msgstr "Должна ли отображаться кнопка меню на панели заголовка"
+msgstr "Exibir ou não um botão de menu na barra de cabeçalho"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:48
 msgid ""
 "Whether or not to draw a 1px line under the header bar when there's a single "
 "tab open"
 msgstr ""
-"Отображать ли однопиксельную линию под панелью заголовка когда открыта одна "
-"вкладка"
+"Se deve ou não desenhar uma linha de 1px sob a barra de cabeçalho quando há "
+"uma única aba aberta"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:52
+#, fuzzy
 msgid "Whether or not to reserve an area for dragging the header bar"
-msgstr "Резервировать ли область для перетаскивания панели заголовка"
+msgstr "Se deve ou não reservar uma área para arrastar a barra de cabeçalho"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:56
 msgid "Whether or not to show scrollbars"
-msgstr "Отображать ли полосы прокрутки"
+msgstr "Mostrar ou não barras de rolagem"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:60
 msgid "Whether overlay scrolling should be enabled"
-msgstr "Включить ли оверлейную прокрутку"
+msgstr "Se a rolagem de sobreposição deve ser ativada"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:64
 msgid "If enabled, terminals will scroll by pixels instead of rows"
 msgstr ""
-"Если включено, прокрутка будет происходить по пикселям, а не по строкам"
+"Se ativado, os terminais rolarão por pixels ao invés de linhas"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:68
 msgid "Enable to limit terminal scrollback"
-msgstr "Включите для ограничения буфера прокрутки терминала"
+msgstr "Ativar para limitar a rolagem do terminal"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:72
 msgid "Number of lines stored in scrollback"
-msgstr "Количество строк в буфере прокрутки"
+msgstr "Número de linhas armazenadas na rolagem"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:76
 msgid "If enabled, floating controls will be shown in headerless mode"
 msgstr ""
-"Если включено, плавающие элементы управления будут отображаться в режиме без "
-"панели заголовка"
+"Se ativado, os controles flutuantes serão mostrados no modo sem cabeçalho"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:80
 msgid ""
 "Hoverable area (in pixels) at the top of the window to trigger floating "
 "controls"
 msgstr ""
-"Наводимая область (в пикселях) в верхней части окна для вызова плавающих "
-"элементов управления"
+"Área flutuante (em pixels) na parte superior da janela para "
+"acionar controles flutuantes"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:84
 msgid "Delay time before showing floating controls"
-msgstr "Время задержки отображения плавающих элементов управления"
+msgstr "Tempo de atraso antes de mostrar controles flutuantes"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:88
 msgid "The light color scheme for the terminal"
-msgstr "Светлая цветовая схема"
+msgstr "Esquema de cores claras para o terminal"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:92
 msgid "The dark color scheme for the terminal"
-msgstr "Тёмная цветовая схема"
+msgstr "Esquema de cores escuras para o terminal"
 
 #. 0 = Follow system, 1 = Light Style, 2 = Dark Style
 #: data/com.raggesilver.BlackBox.gschema.xml:97
 msgid "Style preference"
-msgstr "Параметры стиля"
+msgstr "Preferência de estilo"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:101
 msgid "Amount of padding around terminal widgets (top, right, bottom, left)"
 msgstr ""
-"Размер отступов вокруг виджетов терминала (сверху, справа, снизу, слева)"
+"Quantidade de preenchimento em torno dos widgets do terminal (superior, direito, "
+"inferior, esquerdo)"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:105
 msgid "Terminal cell width"
-msgstr "Ширина письма"
+msgstr "Largura da célula do terminal"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:109
 msgid "Terminal cell height"
-msgstr "Высота письма"
+msgstr "Altura da célula do terminal"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:113
 msgid "Cursor shape"
-msgstr "Форма курсора"
+msgstr "Formato do cursor"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:117
 msgid "If enabled, ctrl+c and ctrl+v will work for copy/paste"
-msgstr "Если включено, Сtrl+С и Сtrl+V будут работать для копирования/вставки"
+msgstr "Se ativado, Ctrl+C e Ctrl+V funcionarão para copiar/colar"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:121
 msgid ""
 "If enabled, the tab bar will be replaced with a title label when there's a "
 "single open tab"
 msgstr ""
-"Если включено, панель вкладок будет заменена заголовком с одной открытой "
-"вкладкой"
+"Se ativado, a barra de abas será substituída por um rótulo quando houver "
+"uma única aba aberta"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:125
 msgid "If enabled, a single open tab will blend with the headerbar color"
-msgstr "Если включено, единственная вкладка примет цвет панели заголовка"
+msgstr ""
+"Se ativado, uma única aba aberta será combinada com a cor da barra "
+"do cabeçalho"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:129
 msgid "Whether to spawn shell in login mode"
-msgstr "Запускать ли оболочку в режиме входа"
+msgstr "Se o shell deve ser gerado no modo de login"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:133
 msgid "Whether to use a custom command instead of the user's shell"
-msgstr "Использовать ли другую команду вместо оболочки пользователя"
+msgstr "Se deve usar um comando personalizado ao invés do shell do usuário"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:137
 msgid "Custom command to use instead of the user's shell"
-msgstr "Другая команда для использования вместо оболочки пользователя"
+msgstr "Comando personalizado para usar ao invés do shell do usuário"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:144
 msgid ""
 "Whether clicking next on the last search result should return to the first"
 msgstr ""
-"Должно ли нажатие кнопки \"Далее\" на последнем результате поиска возвращать "
-"к первому"
+"Se clicar em próximo no último resultado da pesquisa deve retornar ao "
+"primeiro"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:148
 msgid "Whether search should be case sensitive"
-msgstr "Должен ли поиск учитывать регистр символов"
+msgstr "Se a pesquisa deve diferenciar maiúsculas de minúsculas"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:152
 msgid "Whether search should only match entire words"
-msgstr "Должен ли поиск учитывать только целые слова"
+msgstr "Se a pesquisa deve corresponder apenas a palavras inteiras"
 
 #: data/com.raggesilver.BlackBox.gschema.xml:156
 msgid "Whether search should be performed using regular expressions"
-msgstr "Должен ли поиск выполняться с использованием регулярных выражений"
+msgstr "Se a pesquisa deve ser realizada usando expressões regulares"
 
 #: src/gtk/help-overlay.ui:10
 msgctxt "shortcut window"
 msgid "Window"
-msgstr "Окно"
+msgstr "Janela"
 
 #: src/gtk/help-overlay.ui:13
 msgctxt "shortcut window"
 msgid "New window"
-msgstr "Новое окно"
+msgstr "Nova janela"
 
 #: src/gtk/help-overlay.ui:19
 msgctxt "shortcut window"
 msgid "New tab"
-msgstr "Новая вкладка"
+msgstr "Nova aba"
 
 #: src/gtk/help-overlay.ui:25
 msgctxt "shortcut window"
 msgid "Close tab"
-msgstr "Закрыть вкладку"
+msgstr "Fechar aba"
 
 #: src/gtk/help-overlay.ui:32
 msgctxt "shortcut window"
 msgid "Switch headbar mode"
-msgstr "Режим панели заголовка"
+msgstr "Alternar para modo com barra de cabeçalho"
 
 #: src/gtk/help-overlay.ui:38
 msgctxt "shortcut window"
 msgid "Toggle fullscreen"
-msgstr "Полноэкранный режим"
+msgstr "Alternar para o modo tela cheia"
 
 #: src/gtk/help-overlay.ui:45
 msgctxt "shortcut window"
 msgid "Terminal"
-msgstr "Терминал"
+msgstr "Terminal"
 
 #: src/gtk/help-overlay.ui:48
 msgctxt "shortcut window"
 msgid "Search"
-msgstr "Поиск"
+msgstr "Pesquisar"
 
 #: src/gtk/help-overlay.ui:54
 msgctxt "shortcut window"
 msgid "Copy"
-msgstr "Копировать"
+msgstr "Copiar"
 
 #: src/gtk/help-overlay.ui:60
 msgctxt "shortcut window"
 msgid "Paste"
-msgstr "Вставить"
+msgstr "Colar"
 
 #: src/gtk/help-overlay.ui:66
 msgctxt "shortcut window"
 msgid "Zoom in"
-msgstr "Увеличить масштаб"
+msgstr "Ampliar"
 
 #: src/gtk/help-overlay.ui:72
 msgctxt "shortcut window"
 msgid "Zoom out"
-msgstr "Уменьшить масштаб"
+msgstr "Reduzir"
 
 #: src/gtk/help-overlay.ui:80
 msgctxt "shortcut window"
 msgid "Navigation"
-msgstr "Навигация"
+msgstr "Navegação"
 
 #: src/gtk/help-overlay.ui:83
 msgctxt "shortcut window"
 msgid "Focus next tab"
-msgstr "Следующая вкладка"
+msgstr "Foco na próxima aba"
 
 #: src/gtk/help-overlay.ui:89
 msgctxt "shortcut window"
 msgid "Focus previous tab"
-msgstr "Предыдущая вкладка"
+msgstr "Foco na aba anterior"
 
 #: src/gtk/help-overlay.ui:96
 msgctxt "shortcut window"
 msgid "Switch to Tab"
-msgstr "Переключиться на вкладку (номер)"
+msgstr "Mudar para Aba"
 
 #: src/gtk/help-overlay.ui:102
 msgctxt "shortcut window"
 msgid "Switch to last Tab"
-msgstr "Последняя вкладка"
+msgstr "Mudar para a última aba"
 
 #: src/gtk/help-overlay.ui:109
 msgctxt "shortcut window"
 msgid "General"
-msgstr "Основные"
+msgstr "Geral"
 
 #: src/gtk/help-overlay.ui:112
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr "Комбинации клавиш"
+msgstr "Mostrar Atalhos"
 
 #: src/gtk/preferences-window.ui:11
 msgid "General"
-msgstr "Основные"
+msgstr "Geral"
 
 #: src/gtk/preferences-window.ui:15
 msgid "Window"
-msgstr "Окно"
+msgstr "Janela"
 
 #: src/gtk/preferences-window.ui:19
 msgid "Remember Window Size"
-msgstr "Запоминать размер окна"
+msgstr "Lembrar do Tamanho da Janela"
 
 #: src/gtk/preferences-window.ui:30
+#, fuzzy
 msgid "Show Borders"
-msgstr "Отображать границы"
+msgstr "Mostrar Bordas"
 
 #: src/gtk/preferences-window.ui:31
 msgid "Enable to draw a border around the window and the active tab."
-msgstr "Включает отображение границ вокруг окна и активной вкладки."
+msgstr "Ativar para desenhar uma borda ao redor da janela e da aba ativa."
 
 #: src/gtk/preferences-window.ui:42
 msgid "Theme Integration"
-msgstr "Интеграция темы"
+msgstr "Integração do tema"
 
 #: src/gtk/preferences-window.ui:43
 msgid "Style window with terminal theme colors."
-msgstr "Применяет тему терминала для окна."
+msgstr "Janela com estilo de cores do tema do terminal."
 
 #: src/gtk/preferences-window.ui:53
 msgid "Style Preference"
-msgstr "Стиль"
+msgstr "Preferência de Estilo"
 
 #: src/gtk/preferences-window.ui:57
 msgid "Follow System"
-msgstr "Системный"
+msgstr "Seguir o Sistema"
 
 #: src/gtk/preferences-window.ui:58
 msgid "Light Style"
-msgstr "Светлый"
+msgstr "Estilo Claro"
 
 #: src/gtk/preferences-window.ui:59
 msgid "Dark Style"
-msgstr "Тёмный"
+msgstr "Estilo Escuro"
 
 #: src/gtk/preferences-window.ui:69
 msgid "Tabs"
-msgstr "Вкладки"
+msgstr "Abas"
 
 #: src/gtk/preferences-window.ui:73
 msgid "Expand Tabs"
-msgstr "Расширить вкладки"
+msgstr "Expandir Abas"
 
 #: src/gtk/preferences-window.ui:83
 msgid "Single Tab Mode"
-msgstr "Режим одиночной вкладки"
+msgstr "Modo de Aba Única"
 
 #: src/gtk/preferences-window.ui:88
 msgid "Hide Single Tab"
-msgstr "Спрятать вкладку"
+msgstr "Ocultar Aba Única"
 
 #: src/gtk/preferences-window.ui:89
 msgid ""
 "Replace tab bar with a title label when a single tab is open. Easier to drag "
 "the window."
 msgstr ""
-"Заменяет панель вкладок заголовком, если открыта только одна вкладка. "
-"Упрощает перетаскивание окна."
+"Substitua a barra de abas por um rótulo quando uma única aba estiver aberta. "
+"Mais fácil de arrastar a janela."
 
 #: src/gtk/preferences-window.ui:101
 msgid "Stealth Single Tab"
-msgstr "Незаметная вкладка"
+msgstr "Aba Única Invisível"
 
 #: src/gtk/preferences-window.ui:102
+#, fuzzy
 msgid "Blend single tab with header bar."
-msgstr "Смешивает одиночную вкладку с панелью заголовка."
+msgstr "Mesclar aba única com a barra de cabeçalho."
 
 #: src/gtk/preferences-window.ui:117
+#, fuzzy
 msgid "Header Bar"
-msgstr "Панель заголовка"
+msgstr "Barra de Cabeçalho"
 
 #: src/gtk/preferences-window.ui:121
+#, fuzzy
 msgid "Show Header Bar"
-msgstr "Отображать панель заголовка"
+msgstr "Mostrar Barra de Cabeçalho"
 
 #: src/gtk/preferences-window.ui:132
 msgid "Show Menu Button"
-msgstr "Отображать кнопку меню"
+msgstr "Botão Mostrar Menu"
 
 #: src/gtk/preferences-window.ui:143
 msgid "Drag Area"
-msgstr "Область перетаскивания"
+msgstr "Área de Arrasto"
 
 #: src/gtk/preferences-window.ui:144
 msgid "Enable to reserve some space on the left side to drag the window."
-msgstr "Резервирует место с левой стороны для перетаскивания окна."
+msgstr "Ativar para reservar algum espaço no lado esquerdo para arrastar a janela."
 
 #: src/gtk/preferences-window.ui:156
 msgid "Draw Line Under Header Bar"
-msgstr "Линия под панелью заголовка"
+msgstr "Desenhar Linha Abaixo da Barra do Cabeçalho"
 
 #: src/gtk/preferences-window.ui:157
 msgid ""
 "Enable to draw a line under the header bar when a single tab is open. "
 "Requires \"Show Borders\"."
 msgstr ""
-"Включает отображение линии под панелью заголовка, если открыта одна вкладка. "
-"Опция \"Отображать границы\" должна быть включена."
+"Ativar para desenhar uma linha abaixo da barra de cabeçalho quando uma "
+"única aba estiver aberta. Requer \"Mostrar Bordas\"."
 
 #: src/gtk/preferences-window.ui:167
 msgid "Floating Controls"
-msgstr "Плавающие элементы управления"
+msgstr "Controles Flutuantes"
 
 #: src/gtk/preferences-window.ui:170
 msgid "Show Floating Controls"
-msgstr "Отображение"
+msgstr "Mostrar Controles Flutuantes"
 
 #: src/gtk/preferences-window.ui:171
+#, fuzzy
 msgid "Show floating controls when header bar is hidden."
-msgstr "Плавающие элементы управления в режиме без панели заголовка."
+msgstr "Mostrar controles flutuantes quando a barra de cabeçalho estiver oculta."
 
 #: src/gtk/preferences-window.ui:183
 msgid "Floating Controls Hover Area"
-msgstr "Область наведения"
+msgstr "Área de Controles Flutuantes"
 
 #: src/gtk/preferences-window.ui:184
 msgid ""
 "Hoverable area (in pixels) at the top of the window to trigger floating "
 "controls."
 msgstr ""
-"Наводимая область (в пикселях) в верхней части окна для вызова плавающих "
-"элементов управления."
+"Área flutuante (em pixels) na parte superior da janela para acionar "
+"controles flutuantes."
 
 #: src/gtk/preferences-window.ui:196
 msgid "Delay Before Show Floating Controls"
-msgstr "Задержка отображения"
+msgstr "Atraso Antes de Mostrar Controles Flutuantes"
 
 #: src/gtk/preferences-window.ui:197
 msgid "Delay time (ms) before show floating controls."
-msgstr "Время задержки (мс) отображения плавающих элементов управления."
+msgstr "Tempo de atraso (ms) antes de mostrar controles flutuantes."
 
 #: src/gtk/preferences-window.ui:214 src/gtk/preferences-window.ui:278
 msgid "Terminal"
-msgstr "Терминал"
+msgstr "Terminal"
 
 #: src/gtk/preferences-window.ui:219
 msgid "Text"
-msgstr "Текст"
+msgstr "Texto"
 
 #: src/gtk/preferences-window.ui:223
 msgid "Font"
-msgstr "Шрифт"
+msgstr "Fonte"
 
 #: src/gtk/preferences-window.ui:235
 msgid "Cell Spacing"
-msgstr "Интервалы"
+msgstr "Espaçamento da Célula"
 
 #: src/gtk/preferences-window.ui:238
 msgid "Width"
-msgstr "Ширина"
+msgstr "Largura"
 
 #: src/gtk/preferences-window.ui:250
 msgid "Height"
-msgstr "Высота"
+msgstr "Altura"
 
 #: src/gtk/preferences-window.ui:265
 msgid "Easy Copy &amp; Paste"
-msgstr "Упрощение копирования и вставки"
+msgstr "Copiar e Colar Simples"
 
 #: src/gtk/preferences-window.ui:266
 msgid "Use ctrl+c/ctrl+v for copy/paste."
-msgstr "Ctrl+C/Ctrl+V для копирования/вставки."
+msgstr "Use Ctrl+C/Ctrl+V para copiar/colar."
 
 #: src/gtk/preferences-window.ui:281
 msgid "Cursor"
-msgstr "Курсор"
+msgstr "Cursor"
 
 #: src/gtk/preferences-window.ui:285
 msgid "Block"
-msgstr "Блок"
+msgstr "Bloco"
 
 #: src/gtk/preferences-window.ui:286
 msgid "IBeam"
-msgstr "I-образный"
+msgstr "IBeam"
 
 #: src/gtk/preferences-window.ui:287
 msgid "Underline"
-msgstr "Подчёркивание"
+msgstr "Sublinhado"
 
 #: src/gtk/preferences-window.ui:295
 msgid "Padding"
-msgstr "Отступы"
+msgstr "Preenchimento"
 
 #: src/gtk/preferences-window.ui:311
 msgid "Scrolling"
-msgstr "Прокрутка"
+msgstr "Rolagem"
 
 #: src/gtk/preferences-window.ui:314
 msgid "Scrollbars"
-msgstr "Полосы прокрутки"
+msgstr "Barras de Rolagem"
 
 #: src/gtk/preferences-window.ui:317
 msgid "Show Scrollbars"
-msgstr "Отображать полосы прокрутки"
+msgstr "Mostrar Barras de Rolagem"
 
 #: src/gtk/preferences-window.ui:328
 msgid "Use Overlay Scrolling"
-msgstr "Использовать оверлейную прокрутку"
+msgstr "Usar Rolagem Sobreposta"
 
 #: src/gtk/preferences-window.ui:342
 msgid "Set Scrollback Limit"
-msgstr "Установить лимит буфера прокрутки"
+msgstr "Definir Limite de Rolagem"
 
 #: src/gtk/preferences-window.ui:353
 msgid "Scrollback Lines"
-msgstr "Количество строк"
+msgstr "Linhas de Rolagem"
 
 #: src/gtk/preferences-window.ui:369
 msgid "Command"
-msgstr "Команда"
+msgstr "Comando"
 
 #: src/gtk/preferences-window.ui:373
 msgid "Run Command as Login Shell"
-msgstr "Выполнять команду как оболочку входа"
+msgstr "Executar comando como shell de login"
 
 #: src/gtk/preferences-window.ui:384
 msgid "Use Custom Command"
-msgstr "Использовать другую команду"
+msgstr "Usar Comando Personalizado"
 
 #: src/gtk/preferences-window.ui:394
 msgid "Custom Command"
-msgstr "Другая команда"
+msgstr "Comando Personalizado"
 
 #: src/gtk/preferences-window.ui:401
 msgid "Theme"
-msgstr "Тема"
+msgstr "Tema"
 
 #: src/gtk/preferences-window.ui:412
 msgid "Open folder"
-msgstr "Открыть папку"
+msgstr "Abrir pasta"
 
 #: src/gtk/preferences-window.ui:420
 msgid "Get more themes online"
-msgstr "Больше тем онлайн"
+msgstr "Obtenha mais temas online"
 
 #: src/gtk/preferences-window.ui:434
 msgid "Set your preferred theme for light and dark styles."
-msgstr "Предпочитаемая тема для каждого стиля."
+msgstr "Definir seu tema preferido para estilos claros e escuros."
 
 #: src/gtk/preferences-window.ui:449
 msgid "Light Theme"
-msgstr "Светлая"
+msgstr "Tema Claro"
 
 #: src/gtk/preferences-window.ui:455
 msgid "Dark Theme"
-msgstr "Тёмная"
+msgstr "Tema Escuro"
 
 #: src/gtk/preferences-window.ui:463
 msgid "Only display themes for the current style"
-msgstr "Отображать темы только для выбранного стиля"
+msgstr "Exibir apenas temas para o estilo atual"
 
 #: src/gtk/preferences-window.ui:471
 msgid ""
@@ -553,17 +563,17 @@ msgid ""
 "a light color scheme while using the dark app style or a dark color scheme "
 "while using the light app style."
 msgstr ""
-"Для обеспечения читабельности опция \"Интеграция темы\" будет отключена, "
-"если выбрана светлая цветовая схема при использовании темного стиля или "
-"темная цветовая схема при использовании светлого стиля."
+"Para garantir a legibilidade, \"Integração do tema\" será desativado se você selecionar "
+"um esquema de cores claras ao usar o estilo escuro do aplicativo ou um esquema "
+"de cores escuras enquanto estiver usando o estilo claro do aplicativo. "
 
 #: src/gtk/preferences-window.ui:498
 msgid "Advanced"
-msgstr "Расширенные"
+msgstr "Avançado"
 
 #: src/gtk/preferences-window.ui:502
 msgid "Experimental"
-msgstr "Экспериментальные 🧪"
+msgstr "Experimental"
 
 #: src/gtk/preferences-window.ui:503
 msgid ""
@@ -571,110 +581,112 @@ msgid ""
 "<a href=\"https://gitlab.gnome.org/raggesilver/blackbox/-/issues\">report "
 "bugs</a>."
 msgstr ""
-"Функции в этом разделе довольно ненадёжны. Не стесняйтесь тестировать и <a "
-"href=\"https://gitlab.gnome.org/raggesilver/blackbox/-/issues\">сообщать об "
-"ошибках</a>."
+"Os recursos nesta seção são conhecidos por serem instáveis. "
+"Por favor, sinta-se à vontade para testar e <a href=\"https://gitlab.gnome.org/"
+"raggesilver/blackbox/-/issues\">reportar erros</a>."
 
 #: src/gtk/preferences-window.ui:507
 msgid "Pixel Scrolling"
-msgstr "Прокрутка по пикселям"
+msgstr "Rolagem de Pixel"
 
 #: src/gtk/preferences-window.ui:508
 msgid ""
 "Scroll by pixel units instead of scrolling by lines. \"Show scrollbars\" "
 "must be enabled."
 msgstr ""
-"Используется вместо построчной прокрутки. Опция \"Отображать полосы "
-"прокрутки\" должна быть включена."
+"Rolar por unidades de pixel ao invés de rolar por linhas. "
+"\"Mostrar barras de rolagem\" deve estar ativado."
 
 #: src/gtk/preferences-window.ui:520
 msgid "Danger Zone"
-msgstr "Опасная зона"
+msgstr "Zona de Perigo"
 
 #: src/gtk/preferences-window.ui:523
 msgid "Reset Preferences"
-msgstr "Сброс настроек"
+msgstr "Redefinir preferências"
 
 #: src/gtk/preferences-window.ui:524
 msgid ""
 "This will revert all settings back to default. Your extra themes will not be "
 "removed."
 msgstr ""
-"Все настройки вернутся к значениям по умолчанию. Персональные темы не будут "
-"удалены."
+"Isso reverterá todas as configurações de volta ao padrão. Seus temas "
+"extras não serão removidos."
 
 #: src/gtk/preferences-window.ui:529
 msgid "Reset preferences"
-msgstr "Сбросить настройки"
+msgstr "Redefinir preferências"
 
 #: src/CommandLine.vala:47
 msgid "Show app version"
-msgstr "Отобразить версию приложения"
+msgstr "Mostrar versão do app"
 
 #: src/CommandLine.vala:56
 msgid "Set current working directory"
-msgstr "Установить текущий рабочий каталог"
+msgstr "Definir diretório de trabalho atual"
 
 #: src/CommandLine.vala:65
 msgid "Execute command in a terminal"
-msgstr "Выполнить команду в терминале"
+msgstr "Executar comando em um terminal"
 
 #: src/CommandLine.vala:74
 msgid "Show help"
-msgstr "Отобразить справку"
+msgstr "Mostrar ajuda"
 
 #: src/CommandLine.vala:121
 #, c-format
 msgid "Run %s --help to get help\n"
-msgstr "Выполните %s --help для получения справки\n"
+msgstr "Execute %s --help para obter ajuda\n"
 
 #: src/widgets/Window.vala:142 src/widgets/HeaderBar.vala:30
 msgid "Fullscreen"
-msgstr "Полноэкранный режим"
+msgstr "Tela Cheia"
 
 #: src/widgets/Window.vala:145
 msgid "Show headerbar"
-msgstr "Отображать панель заголовка"
+msgstr "Mostrar barra de cabeçalho"
 
 #: src/widgets/Window.vala:161
 msgid "Menu"
-msgstr "Меню"
+msgstr "Menu"
 
 #: src/widgets/TerminalTab.vala:120
 msgid "New Tab"
-msgstr "Новая вкладка"
+msgstr "Nova Aba"
 
 #: src/widgets/TerminalTab.vala:121
 msgid "New Window"
-msgstr "Новое окно"
+msgstr "Nova Janela"
 
 #: src/widgets/TerminalTab.vala:123
 msgid "Copy"
-msgstr "Копировать"
+msgstr "Copiar"
 
 #: src/widgets/TerminalTab.vala:124
 msgid "Paste"
-msgstr "Вставить"
+msgstr "Colar"
 
 #: src/widgets/TerminalTab.vala:128 src/widgets/HeaderBar.vala:31
 msgid "Preferences"
-msgstr "Параметры"
+msgstr "Preferências"
 
 #: src/widgets/TerminalTab.vala:131 src/widgets/HeaderBar.vala:32
 msgid "Help"
-msgstr "Справка"
+msgstr "Ajuda"
 
 #: src/widgets/TerminalTab.vala:132 src/widgets/HeaderBar.vala:33
 msgid "About"
-msgstr "О приложении"
+msgstr "Sobre"
 
 #: src/widgets/PreferencesWindow.vala:459
 msgid "Terminal Font"
-msgstr "Шрифт терминала"
+msgstr "Fonte do Terminal"
 
 #: src/utils/Constants.vala:34
 msgid "You can still access the menu by right-clicking any terminal."
-msgstr "Вы можете открыть меню, щёлкнув правой кнопкой мыши по терминалу."
+msgstr ""
+"Você ainda pode acessar o menu clicando com o botão direito do mouse "
+"em qualquer terminal."
 
 #: src/utils/Constants.vala:36
 #, c-format
@@ -683,45 +695,8 @@ msgid ""
 "progress has been made on this port, copying has yet to be implemented. This "
 "means there's currently no way to copy text in %s."
 msgstr ""
-"%s использует ранний Gtk 4 порт VTE как виджет терминала. Хотя достаточно "
-"серьёзный прогресс был достигнут в развитии порта, копирование текста в %s "
-"пока не поддерживается."
+"%s usa um port inicial de Gtk 4 do VTE como widget de terminal. Embora "
+"muito progresso tenha sido feito neste port, a cópia ainda não foi implementada."
+"Isso significa que atualmente não há como copiar texto em %s."
 
-#~ msgid ""
-#~ "If set to true, closing the search window will unselect the search result"
-#~ msgstr ""
-#~ "Если установлено значение true, закрытие окна поиска снимет выделение с "
-#~ "результата поиска"
 
-#~ msgid "Whether new search windows should be fixed by default"
-#~ msgstr "Должно ли новое окно поиска быть закреплённым по умолчанию"
-
-#~ msgid "Search"
-#~ msgstr "Поиск"
-
-#~ msgid "Clear Selection on Exit"
-#~ msgstr "Снятие выделения при выходе"
-
-#~ msgid "Enable to clear match selection when search window is closed."
-#~ msgstr "Включает снятие выделения совпадений, когда окно поиска закрыто."
-
-#~ msgid "Pinned Search Window"
-#~ msgstr "Закрепление окна поиска"
-
-#~ msgid "Enable to make new search windows pinned by default."
-#~ msgstr "Включает закрепление нового окна поиска по умолчанию."
-
-#~ msgid "Tabs and Headerbar"
-#~ msgstr "Вкладки и панель заголовка"
-
-#, c-format
-#~ msgid ""
-#~ "Open <a href=\"file://%s\">themes folder</a>. Get more themes <a "
-#~ "href=\"%s\">online</a>."
-#~ msgstr ""
-#~ "Откройте <a href=\"file://%s\">папку с темами</a>. Больше тем можно найти "
-#~ "<a href=\"%s\">онлайн</a>."
-
-#~ msgctxt "shortcut window"
-#~ msgid "Quit"
-#~ msgstr "Завершить"
